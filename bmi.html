@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Distribution by State</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Distribution by State</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Segoe+UI&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-brand">BRFSS Analytics</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bmi-distribution.html" class="active">BMI Distribution</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
     <h1>BMI Distribution by State</h1>
-    # DropDown Menu list of states
-    <label for="state-select">Select a state:</label>
-    <select id="state-select">
+    <section class="controls">
+      <label for="state-select">Select a state:</label>
+      <select id="state-select">
         <option value="1">Alabama</option>
         <option value="2">Alaska</option>
         <option value="4">Arizona</option>
@@ -50,7 +70,6 @@
         <option value="44">Rhode Island</option>
         <option value="45">South Carolina</option>
         <option value="46">South Dakota</option>
-        <option value="46">South Dakota</option>
         <option value="47">Tennessee</option>
         <option value="48">Texas</option>
         <option value="49">Utah</option>
@@ -64,15 +83,18 @@
         <option value="72">Puerto Rico</option>
         <option value="78">Virgin Islands</option>
     </select>
+      <button id="update-button">Get BMI Data</button>
+    </section>
 
-    <button id="update-button">Get BMI Data</button>
+    <section id="bmi-plot" class="card">
+      <h2>Results</h2>
+      <p>Plot will appear here after you select a state.</p>
+    </section>
+  </main>
 
-    # Div to hold the plot
-    <div id="bmi-plot">
-        Plot Will Come Here
-    </div>
-
-     to Go Back to home page
-    <button>Home Page</button>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BRFSS Health Analytics. All rights reserved.</p>
+  </footer>
 </body>
 </html>

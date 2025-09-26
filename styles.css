@@ -1,0 +1,135 @@
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Body ---------- */
+body {
+  background: #f5f9ff; /* light background */
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ---------- Navbar ---------- */
+nav {
+  background: #0066cc; /* deep blue */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffdd57; /* yellow accent on hover */
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0066cc, #00c6ff);
+  color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ---------- Dropdown ---------- */
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* ---------- Buttons ---------- */
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #004999;
+  transform: scale(1.05);
+}
+
+/* ---------- Plot Container ---------- */
+#bmi-plot {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  background: #0066cc;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 20px 20px 0 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #bmi-plot {
+    width: 95%;
+  }
+}
