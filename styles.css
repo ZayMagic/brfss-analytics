@@ -133,3 +133,45 @@ footer {
     width: 95%;
   }
 }
+
+/* ---------- About Page ---------- */
+.about-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  margin-top: 1rem;
+}
+
+.about-section p:first-of-type {
+  margin-top: 0;
+}
+
+.about-section ul {
+  margin-left: 1.5rem;
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+
+.terms-list {
+  margin-left: 1rem;
+}
+
+.terms-list p {
+  margin-bottom: 0.8rem;
+}
