@@ -58,6 +58,100 @@ header p {
   opacity: 0.9;
 }
 
+
+/* ---------- Hero Section ---------- */
+.hero-content {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #00c6ff, #0066cc); /* teal -> blue */
+  color: white;
+  border-radius: 20px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Hero Button (as a link) */
+.hero-content a {
+  display: inline-block;
+  background: #ffdd57; /* bright yellow CTA */
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero-content a:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* ---------- Cards Section ---------- */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.card-btn {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+  background: #004999;
+  transform: scale(1.05);
+}
+
+
+
 /* ---------- Dropdown ---------- */
 label {
   font-weight: bold;
