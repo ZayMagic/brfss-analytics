@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BRFSS Health Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="bmi.html">BMI Distribution</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="{{ url_for('home_page') }}">Home</a></li>
+      <li><a href="{{ url_for('bmi_page') }}">BMI Distribution</a></li>
+      <li><a href="{{ url_for('about_page') }}">About</a></li>
     </ul>
   </nav>
   
@@ -25,7 +25,7 @@
   <section class="hero-content">
     <h2>Interactive Public Health Insights</h2>
     <h3>Explore BMI, exercise, and health behaviors across the U.S. and its territories</h3>
-    <a href="bmi.html">Explore BMI Data</a>
+    <a href="{{ url_for('bmi_page') }}">Explore BMI Data</a>
   </section>
 
   <!-- Cards Section -->
@@ -33,12 +33,12 @@
     <div class="card">
       <h2>BMI Distribution</h2>
       <p>Visualize Body Mass Index (BMI) categories across states and territories.</p>
-      <a href="bmi.html" class="card-btn">View Data</a>
+      <a href="{{ url_for('bmi_page') }}" class="card-btn">View Data</a>
     </div>
     <div class="card">
       <h2>About BRFSS</h2>
       <p>Learn more about the Behavioral Risk Factor Surveillance System dataset.</p>
-      <a href="about.html" class="card-btn">Learn More</a>
+      <a href="{{ url_for('about_page') }}" class="card-btn">Learn More</a>
     </div>
   </section>
 
